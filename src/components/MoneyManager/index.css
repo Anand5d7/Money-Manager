@@ -1,0 +1,228 @@
+/* Write your CSS here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.header-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  height: 20vh;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .app-container {
+    min-height: 100vh;
+    width: 90%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header-container {
+    text-align: start;
+    width: 100%;
+    height: 20vh;
+    padding-left: 40px;
+  }
+  .header {
+    font-size: 30px;
+  }
+  .para {
+    font-size: 224px;
+  }
+  .blue {
+    font-size: 22px;
+  }
+}
+
+.header {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 700;
+}
+.para {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+}
+.blue {
+  color: #0b69ff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.transaction-container {
+  background-color: transparent;
+  border: 1px solid #7e858e;
+  border-radius: 12px;
+  outline: none;
+  height: 50vh;
+  width: 20vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.trans-head {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+}
+.label {
+  color: #cbd5e1;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+}
+.title-input {
+  height: 30px;
+  width: 100%;
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #7e858e;
+  border-radius: 4px;
+  padding-left: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+.amount-input {
+  height: 30px;
+  width: 100%;
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #7e858e;
+  border-radius: 4px;
+  padding-left: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+.type-select {
+  height: 30px;
+  width: 100%;
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #7e858e;
+  border-radius: 4px;
+  padding-left: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+
+.button {
+  height: 40px;
+  width: 70px;
+  background-color: #0b69ff;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 700;
+  padding: 3px;
+  border-radius: 8px;
+}
+.history-details {
+  background-color: transparent;
+  border: 1px solid #7e858e;
+  border-radius: 12px;
+  outline: none;
+  height: 50vh;
+  width: 20vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.history-head {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+}
+.history-container {
+  height: 100%;
+  border-radius: 8px;
+}
+.list-container {
+  padding-left: 0px;
+  margin: 0px;
+}
+.table-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 48px;
+  list-style-type: none;
+  border: 1px solid #cbd5e1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.table-header-cell {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  width: 30%;
+  border-right: none;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  .transaction-container {
+    margin-right: 50px;
+    height: 55vh;
+    width: 28vw;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+  }
+  .history-details {
+    height: 55vh;
+    width: 32vw;
+  }
+}
